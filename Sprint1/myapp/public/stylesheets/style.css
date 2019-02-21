@@ -1,0 +1,170 @@
+/**CSS Styles**/
+
+*{
+padding:0;
+margin:0;
+}
+
+body{
+background-image: url(/images/back.jpg);
+background-attachment:fixed;
+background-size:100%;
+}
+
+#wrapper{
+max-width:1100px;
+margin:auto;
+background:#fff;
+overflow:hidden;
+background:rgba(255, 255, 255, 0.9);
+}
+
+header{
+z-index: 10;
+width:100%;
+max-width: 1100px;    
+height:150px;
+line-height:50px;
+position:fixed;
+margin:auto;
+background:black;
+}
+
+
+header img{
+height:150px;
+margin:0 auto;
+}
+
+
+main{
+min-height:500px;
+margin-top:150px;
+width:100%;
+float:left;
+padding-bottom:10px;
+overflow:hidden;
+}
+
+footer{
+height:25px;
+line-height:25px;
+clear:both;
+
+}
+
+form#signUpForm{
+    padding-left:30%;
+    padding-top:50px;
+}
+
+form#addbutton{
+    padding-left:30%;
+}
+
+form#contact{
+    padding-left:18%;
+    padding-top:20px;
+}
+
+
+footer ul{
+padding-left:24%;
+}
+
+footer li{
+float:left;
+list-style-type:none;
+margin-right:50px;
+}
+
+img{
+max-width:100;
+display:block;
+}
+
+form{
+    padding-left: 50px;
+}
+
+
+
+
+/**++++++++++Typography++++++++++**/
+
+
+h1, h2, h3 {
+margin:5px;
+font-family:"Times New Roman";
+}
+
+h1{
+padding-left:330px;
+}
+
+h1{
+margin-bottom:10px;
+}
+
+p{
+line-height:1.2; 
+padding-bottom:20px;
+font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+/*--------Boxes------------*/
+legend{
+    font-size:1.3em;
+    padding:7px;
+    font-style:italic;
+    }
+    textarea{
+        width:98%;
+        margin-bottom:10px;
+        resize:both;
+    }
+    form{   
+         max-width: 700px;
+    }
+    
+    label{
+        display:block;
+        margin-bottom:5px;
+    }
+
+    input[type=text], input[type=email]{
+        height:20px;
+        width:50%;
+        margin-bottom:10px;
+        
+    }
+    
+    
+        input[type=radio],
+        input[type=checkbox]{
+          margin-right:5px;
+          margin-bottom:10px;
+            
+    }
+    
+    fieldset{
+        padding:10px;
+        border:1px solid red;
+        border-radius: 10px;
+        margin:10px;
+        clear:both;
+        background:rgb(165,148,211, 0.2);
+        box-shadow:  2px 2px 4px #000000;
+    }
+
+    
+    form ul{
+        margin-bottom:10px;
+    }
+    
+    form li{
+        list-style-type:none;
+        margin-left:10px;
+        margin-bottom:5px;
+       
+    }

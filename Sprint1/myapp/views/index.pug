@@ -1,0 +1,52 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Movies Database
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    #wrapper
+      header
+        a(href='index.html')
+          img(src='/images/logo.jpg', alt='logo')
+      main
+        form#signUpForm()
+          | Movie Title:
+          br
+          input(type='text', name='title')
+          br
+          |               Director:
+          br
+          input(type='text', name='director')
+          br
+          |               Actor:
+          br
+          input(type='text', name='actor')
+          br
+          |               Genre:
+          br
+          input(type='text', name='genre')
+          br
+          |               Language:
+          br
+          input(type='text', name='language')
+          br
+          |               Year:
+          br
+          input(type='text', name='production_year')
+          br
+          |               IMDB Rating:
+          br
+          input(type='text', name='imdb_score')
+          br
+          button#submit Submit
+        form#addbutton(method='get', action='add.html')
+          button(type='submit') Add Movie
+      footer
+        ul
+          li Copyright 2019 ©
+          li All Rights Reserved
+          li Web Designed by Team Awesome
+          li
+            a(href='contact.pug') Contact
+    // wrapper end

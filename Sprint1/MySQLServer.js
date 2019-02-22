@@ -4,8 +4,8 @@ const credentials = {
     host: 'localhost',
     port: '3306',
     user: 'root',
-    password: 'New-Password-Here',
-    databse: 'movie_database'
+    password: 'password',
+    database: 'Movie_Database'
 };
 
 const connection = mysql.createConnection(credentials);

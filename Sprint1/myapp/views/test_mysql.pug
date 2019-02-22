@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Movies Database
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    #wrapper
+      header
+        a(href='index.html')
+          img(src='/images/logo.jpg', alt='logo')
+  main
+  h1= title
+  p Welcome to #{title}
+  p #{message}
+
+  table
+    thead
+    tbody
+    for object in result
+      tr
+        for subobject in object
+          td= subobject
+
+
+          

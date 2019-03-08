@@ -35,120 +35,32 @@ html(lang='en')
         a(href='index.pug')
           img(src='/images/logo.jpg', alt='logo')
       main
-        table
-          form#addForm()
-          // First Row
-          tbody
-            tr
-              th Title
-              th Director
-              th Actor 1
-              th Actor 2
-              th Actor 3
-              th Genre
-              th Language
-              th Content
-              th Year
-              th Budget
-              th IMDB Rating
-            // Second Row
-            tr
-              td
-                input(type='text', name='title', size='8', <='', td='')
-              td
-                input(type='text', name='director', size='8', <='', td='')
-              td
-                input(type='text', name='actor1', size='8', <='', td='')
-              td
-                input(type='text', name='actor2', size='8', <='', td='')
-              td
-                input(type='text', name='actor3', size='8', <='', td='')
-              td
-                input(type='text', name='genre', size='8', <='', td='')
-              td
-                input(type='text', name='language', size='8', <='', td='')
-              td
-                input(type='text', name='content', size='8', <='', td='')
-              td
-                input(type='text', name='year', size='8', <='', td='')
-              td
-                input(type='text', name='budget', size='8', <='', td='')
-              td
-                input(type='text', name='rating', size='8', <='', td='')
-            // Third Row
-            tr
-              td
-                input(type='text', name='1title', size='8', <='', td='')
-              td
-                input(type='text', name='1director', size='8', <='', td='')
-              td
-                input(type='text', name='1actor1', size='8', <='', td='')
-              td
-                input(type='text', name='1actor2', size='8', <='', td='')
-              td
-                input(type='text', name='1actor3', size='8', <='', td='')
-              td
-                input(type='text', name='1genre', size='8', <='', td='')
-              td
-                input(type='text', name='1language', size='8', <='', td='')
-              td
-                input(type='text', name='1content', size='8', <='', td='')
-              td
-                input(type='text', name='1year', size='8', <='', td='')
-              td
-                input(type='text', name='1budget', size='8', <='', td='')
-              td
-                input(type='text', name='1rating', size='8', <='', td='')
-            // Fourth Row
-            tr
-              td
-                input(type='text', name='2title', size='8', <='', td='')
-              td
-                input(type='text', name='2director', size='8', <='', td='')
-              td
-                input(type='text', name='2actor1', size='8', <='', td='')
-              td
-                input(type='text', name='2actor2', size='8', <='', td='')
-              td
-                input(type='text', name='2actor3', size='8', <='', td='')
-              td
-                input(type='text', name='2genre', size='8', <='', td='')
-              td
-                input(type='text', name='2language', size='8', <='', td='')
-              td
-                input(type='text', name='2content', size='8', <='', td='')
-              td
-                input(type='text', name='2year', size='8', <='', td='')
-              td
-                input(type='text', name='2budget', size='8', <='', td='')
-              td
-                input(type='text', name='2rating', size='8', <='', td='')
-            // Fifth Row
-            tr
-              td
-                input(type='text', name='3title', size='8', <='', td='')
-              td
-                input(type='text', name='3director', size='8', <='', td='')
-              td
-                input(type='text', name='3actor1', size='8', <='', td='')
-              td
-                input(type='text', name='3actor2', size='8', <='', td='')
-              td
-                input(type='text', name='3actor3', size='8', <='', td='')
-              td
-                input(type='text', name='3genre', size='8', <='', td='')
-              td
-                input(type='text', name='3language', size='8', <='', td='')
-              td
-                input(type='text', name='3content', size='8', <='', td='')
-              td
-                input(type='text', name='3year', size='8', <='', td='')
-              td
-                input(type='text', name='3budget', size='8', <='', td='')
-              td
-                input(type='text', name='3rating', size='8', <='', td='')
-        // Add movie button
-        input#addNewMovieButton(type='Submit', value=' ADD ')
+        form#addForm(method ="POST" action = '/add')
+          table
+
+            // First Row
+            tbody
+              tr
+                th Title
+                th Director
+                th Actor 1
+                th Actor 2
+                th Actor 3
+                th Genre
+                th Language
+                th Content
+                th Year
+                th Budget
+                th IMDB Rating
+              // Second Row
+              tr
+                td
+                  input(type='text', name='title', size='8', <='', td='')
+                td
+                  input(type='text', name='director', size='8', <='', td='')
+
+          // Add movie button
+          input#addNewMovieButton(type='Submit', value=' ADD ')
       footer
         ul
           li Copyright 2019 ©

@@ -6,21 +6,21 @@ USE Movie_Database;
 
 CREATE TABLE movies(
 movie_id INT PRIMARY KEY AUTO_INCREMENT,
-color VARCHAR(45),
-title VARCHAR(100),
-director_name VARCHAR(45),
-production_year SMALLINT,
-actor_1_name VARCHAR(45),
-actor_2_name VARCHAR(45),
-actor_3_name VARCHAR(45),
-gross INT,
-duration SMALLINT,
-genres VARCHAR(100),
-movie_lang VARCHAR(45),
-country VARCHAR(45),
-content_rating VARCHAR(45),
-budget INT,
-imdb_score DECIMAL(2,1));
+color VARCHAR(45) DEFAULT NULL,
+title VARCHAR(100) DEFAULT NULL,
+director_name VARCHAR(45) DEFAULT NULL,
+production_year SMALLINT DEFAULT NULL,
+actor_1_name VARCHAR(45) DEFAULT NULL,
+actor_2_name VARCHAR(45) DEFAULT NULL,
+actor_3_name VARCHAR(45) DEFAULT NULL,
+gross INT DEFAULT NULL,
+duration SMALLINT DEFAULT NULL,
+genres VARCHAR(100) DEFAULT NULL,
+movie_lang VARCHAR(45) DEFAULT NULL,
+country VARCHAR(45) DEFAULT NULL,
+content_rating VARCHAR(45) DEFAULT NULL,
+budget INT DEFAULT NULL,
+imdb_score DECIMAL(2,1)  DEFAULT NULL);
 
 USE Movie_Database;
 

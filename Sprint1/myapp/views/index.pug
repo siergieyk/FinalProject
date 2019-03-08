@@ -10,7 +10,7 @@ html(lang='en')
         a(href='index.html')
           img(src='/images/logo.jpg', alt='logo')
       main
-        form#signUpForm()
+        form#signUpForm(method ="GET" action = '/Search')
           | Movie Title:
           br
           input(type='text', name='title')
@@ -39,9 +39,8 @@ html(lang='en')
           br
           input(type='text', name='imdb_score')
           br
-          button#submit Submit
-        form#addbutton(method='get', action='add')
-          button(type='submit') Add Movie
+
+          input#SearchMovieButton(type='Submit', value=' SEARCH ')
       footer
         ul
           li Copyright 2019 ©

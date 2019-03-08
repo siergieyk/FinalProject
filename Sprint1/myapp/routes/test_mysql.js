@@ -6,7 +6,7 @@ var reuslts;
 var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  password : 'root',
+  password : 'password',
   database : 'Movie_Database'})
 
 connection.connect();
@@ -23,7 +23,7 @@ connection.query(sql, function(err,rows,fields){
   } if(rows.length > 0){
     results = rows;
   } else {
-    results =null;
+    results = null;
   }
 });
 

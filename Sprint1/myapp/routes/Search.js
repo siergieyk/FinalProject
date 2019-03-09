@@ -36,7 +36,10 @@ router.get('/', function(req, res, next) {
 
    if(req.query.actor !==""){sql = sql + ' AND actor_1_name LIKE "%' +[req.query.actor] +'%"'};
    if(req.query.genre !==""){sql = sql + ' AND genres LIKE "%' +[req.query.genre] +'%"'};
-    sql = sql +';';
+   if(req.query.language !==""){sql = sql + ' AND movie_lang LIKE "%' +[req.query.language] +'%"'};
+   if(req.query.production_year !==""){sql = sql + ' AND production_year > ' +[parseInt(req.query.production_year)]};
+   if(req.query.language !==""){sql = sql + ' AND movie_lang LIKE "%' +[req.query.language] +'%"'};
+   sql = sql +';';
    console.log(sql);
     con.query(sql, function(err, rows, fields){
         if(err){

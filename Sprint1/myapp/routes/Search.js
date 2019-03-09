@@ -31,11 +31,11 @@ var con = mysql.createConnection({
 console.log(sql);
 router.get('/', function(req, res, next) {
 
-  sql = 'SELECT title, director_name, actor_1_name, actor_2_name, actor_3_name, genres, movie_lang, content_rating, production_year, budget, imdb_score FROM movies WHERE';
-   if(req.query.title !==""){sql = sql + ' title LIKE "%' +[req.query.title] +'%" '};
+  sql = 'SELECT title, director_name, actor_1_name, actor_2_name, actor_3_name, genres, movie_lang, content_rating, production_year, budget, imdb_score FROM movies WHERE title LIKE "%' + [req.query.title] +'%"';
+   if(req.query.director !==""){sql = sql + ' OR director_name LIKE "%' +[req.query.actor] +'%"'};
 
    if(req.query.actor !==""){sql = sql + ' OR actor_1_name LIKE "%' +[req.query.actor] +'%"'};
-   sql = sql +';';
+    sql = sql +';';
    console.log(sql);
     con.query(sql, function(err, rows, fields){
         if(err){

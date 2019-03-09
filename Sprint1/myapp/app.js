@@ -10,6 +10,7 @@ var test_mysqlRouter = require('./routes/test_mysql')
 var addRouter = require('./routes/add')
 var contactRouter = require('./routes/contact')
 var searchRouter = require('./routes/Search')
+var deleteRouter = require('./routes/delete')
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/test_mysql', test_mysqlRouter);
 app.use('/add', addRouter);
 app.use('/contact', contactRouter);
 app.use('/search', searchRouter);
+app.use('/delete', deleteRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -32,9 +32,10 @@ console.log(sql);
 router.get('/', function(req, res, next) {
 
   sql = 'SELECT title, director_name, actor_1_name, actor_2_name, actor_3_name, genres, movie_lang, content_rating, production_year, budget, imdb_score FROM movies WHERE title LIKE "%' + [req.query.title] +'%"';
-   if(req.query.director !==""){sql = sql + ' OR director_name LIKE "%' +[req.query.actor] +'%"'};
+   if(req.query.director !==""){sql = sql + ' AND director_name LIKE "%' +[req.query.director] +'%"'};
 
-   if(req.query.actor !==""){sql = sql + ' OR actor_1_name LIKE "%' +[req.query.actor] +'%"'};
+   if(req.query.actor !==""){sql = sql + ' AND actor_1_name LIKE "%' +[req.query.actor] +'%"'};
+   if(req.query.genre !==""){sql = sql + ' AND genres LIKE "%' +[req.query.genre] +'%"'};
     sql = sql +';';
    console.log(sql);
     con.query(sql, function(err, rows, fields){

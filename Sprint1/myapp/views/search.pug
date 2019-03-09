@@ -17,6 +17,7 @@ html(lang='en')
           table
             thead
             tr
+              th ID
               th Title
               th Director
               th Actor 1
@@ -28,8 +29,19 @@ html(lang='en')
               th Year
               th Budget
               th IMDB Rating
-            tbody  
+            tbody
             for object in result
               tr
                 for subobject in object
                   td= subobject
+        form#DeleteForm(method="POST" action="/delete")
+          | DeleteID:
+          input(type="text" name="deleteid")
+          input(type="submit" value="Submit")
+        footer
+          ul
+            li Copyright 2019 ©
+            li All Rights Reserved
+            li Web Designed by Team Awesome
+            li
+              a(href='contact.pug') Contact

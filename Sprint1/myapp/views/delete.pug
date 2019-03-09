@@ -1,0 +1,15 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Movies Database
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+      #wrapper
+        header
+          a(href='index.pug')
+            img(src='/images/logo.jpg', alt='logo')
+        main
+          h1= title
+          p Welcome to #{title}
+          p #{message}

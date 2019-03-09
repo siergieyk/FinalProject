@@ -13,7 +13,7 @@ html(lang='en')
         form#signUpForm(method ="GET" action = '/Search')
           | Movie Title:
           br
-          input(type='text', name='title')
+          input(type='text', name='title' required)
           br
           |               Director:
           br
@@ -31,11 +31,11 @@ html(lang='en')
           br
           input(type='text', name='language')
           br
-          |               Year:
+          |               Year > :
           br
           input(type='text', name='production_year')
           br
-          |               IMDB Rating:
+          |               IMDB Rating > :
           br
           input(type='text', name='imdb_score')
           br

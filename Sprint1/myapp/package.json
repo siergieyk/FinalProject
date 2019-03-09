@@ -12,7 +12,7 @@
     "express": "^4.16.4",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
-    "mysql": "^2.16.0",
+    "mysql": "github:mysqljs/mysql",
     "nodemon": "^1.18.10",
     "pug": "2.0.0-beta11"
   }

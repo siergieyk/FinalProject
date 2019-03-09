@@ -19,12 +19,9 @@ connection.connect();
 var sql = 'SELECT * FROM movies WHERE title LIKE "star%"';
 connection.query(sql, function(err,rows,fields){
   if(err){
-    console.log(err);
-  } if(rows.length > 0){
-    results = rows;
-  } else {
-    results = null;
+     console.log(err);
   }
+  results = rows;
 });
 
 connection.end();

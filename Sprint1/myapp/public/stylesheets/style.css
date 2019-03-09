@@ -19,10 +19,14 @@ overflow:hidden;
 background:rgba(255, 255, 255, 0.9);
 }
 
+table, th, td {
+  border: 1px solid black;
+}
+
 header{
 z-index: 10;
 width:100%;
-max-width: 1100px;    
+max-width: 1100px;
 height:150px;
 line-height:50px;
 position:fixed;
@@ -107,7 +111,7 @@ margin-bottom:10px;
 }
 
 p{
-line-height:1.2; 
+line-height:1.2;
 padding-bottom:20px;
 font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
@@ -123,10 +127,10 @@ legend{
         margin-bottom:10px;
         resize:both;
     }
-    form{   
+    form{
          max-width: 700px;
     }
-    
+
     label{
         display:block;
         margin-bottom:5px;
@@ -136,17 +140,17 @@ legend{
         height:20px;
         width:50%;
         margin-bottom:10px;
-        
+
     }
-    
-    
+
+
         input[type=radio],
         input[type=checkbox]{
           margin-right:5px;
           margin-bottom:10px;
-            
+
     }
-    
+
     fieldset{
         padding:10px;
         border:1px solid red;
@@ -157,14 +161,14 @@ legend{
         box-shadow:  2px 2px 4px #000000;
     }
 
-    
+
     form ul{
         margin-bottom:10px;
     }
-    
+
     form li{
         list-style-type:none;
         margin-left:10px;
         margin-bottom:5px;
-       
+
     }

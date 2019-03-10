@@ -11,6 +11,7 @@ var addRouter = require('./routes/add')
 var contactRouter = require('./routes/contact')
 var searchRouter = require('./routes/Search')
 var deleteRouter = require('./routes/delete')
+var addresultRouter = require('./routes/addresult')
 
 var app = express();
 
@@ -31,6 +32,7 @@ app.use('/add', addRouter);
 app.use('/contact', contactRouter);
 app.use('/search', searchRouter);
 app.use('/delete', deleteRouter);
+app.use('/addresult', addresultRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

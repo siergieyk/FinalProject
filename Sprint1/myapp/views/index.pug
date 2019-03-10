@@ -7,9 +7,14 @@ html(lang='en')
   body
     #wrapper
       header
-        a(href='index.html')
+        a(href='/')
           img(src='/images/logo.jpg', alt='logo')
       main
+        ul
+          li
+            a(href='/add') ADD movies
+          li
+            a(href='/') Search Movies
         form#signUpForm(method ="GET" action = '/Search')
           | Movie Title:
           br

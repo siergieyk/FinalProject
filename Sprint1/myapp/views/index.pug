@@ -13,7 +13,7 @@ html(lang='en')
         form#signUpForm(method ="GET" action = '/Search')
           | Movie Title:
           br
-          input(type='text', name='title' required)
+          input(type='text', name='title')
           br
           |               Director:
           br
@@ -41,11 +41,14 @@ html(lang='en')
           br
 
           input#SearchMovieButton(type='Submit', value=' SEARCH ')
+          a(href='add', text-decoration='none')
+            input(type='button', value='Add Movie', text-decoration='none')
+           
       footer
         ul
           li Copyright 2019 ©
           li All Rights Reserved
           li Web Designed by Team Awesome
           li
-            a(href='contact.pug') Contact
+            a(href='contactus') Contact
     // wrapper end

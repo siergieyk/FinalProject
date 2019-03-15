@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var test_mysqlRouter = require('./routes/test_mysql')
+//var test_mysqlRouter = require('./routes/test_mysql')
 var addRouter = require('./routes/add')
 var contactusRouter = require('./routes/contactus')
 var searchRouter = require('./routes/Search')
@@ -26,11 +26,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/test_mysql', test_mysqlRouter);
+//app.use('/test_mysql', test_mysqlRouter);
 app.use('/add', addRouter);
 app.use('/contactus', contactusRouter);
 app.use('/search', searchRouter);
 app.use('/delete', deleteRouter);
+
 
 app.post('/contactus', function (req, res) {
 	  var mailOpts, smtpTrans;
@@ -47,7 +48,7 @@ app.post('/contactus', function (req, res) {
 		from: req.body.name + req.body.email,
 		to: 'yyyyyyyyyy@gmail.com',
 		subject: req.body.email + '  --Msg from contactus-form',
-		text: "Name: " + req.body.name + "Email: "  + req.body.email + 
+		text: "Name: " + req.body.name + "Email: "  + req.body.email +
 		      "Contact No:  " + req.body.contactNo + "QUERY: " + req.body.message
 	  };
 	  smtpTrans.sendMail(mailOpts, function (error, response) {

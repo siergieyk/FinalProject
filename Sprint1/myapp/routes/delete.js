@@ -1,15 +1,9 @@
 var express = require('express');
-var mysql = require('mysql');
 var router = express.Router();
 var reuslts;
 
+var con = require('../db');
 
-var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "root",
-  database: "Movie_Database"
-});
 
 router.post('/', function(req, res, next){
 var sql = "DELETE FROM movies WHERE movie_id =" +"? ;"

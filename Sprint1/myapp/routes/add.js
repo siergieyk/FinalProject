@@ -41,8 +41,7 @@ var con = mysql.createConnection({
   ];
   con.query(sql, queParams, function(err, result, fields){
     if(err) console.log(err);
-    console.log("Connected");
-    res.status(201).send('added');
+      res.render('addResult', { title: 'AddResult' });
   });
 
 })

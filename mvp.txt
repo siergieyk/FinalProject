@@ -1,0 +1,45 @@
+Our minimum viable product is to have these user stories completed by the end of the project:
+
+1.	Users can search movies by title.
+ a.	Need to figure out how to pass arguments into server.js.
+ b.	Need to figure out how to pass arguments into query, that is connected to server.js.
+ c.	Need to figure out how to connect MySQL server to server.js.
+
+2.	Users can search movies by actor’s or actress's name.
+ a.	Need to figure out how to pass arguments into server.js.
+ b.	Need to figure out how to pass arguments into query that is connected to server.js.
+ c.	Need to figure out how to connect MySQL server to server.js.
+
+3.	Users can search for movies by the year they have filmed int.
+ a.	Need to figure out how to pass arguments into server.js.
+ b.	Need to figure out how to pass arguments into query that is connected to server.js.
+ c.	Need to figure out how to connect MySQL server to server.js.
+
+4.	Users can search movies by genre.
+ a.	Need to figure out how to pass arguments into server.js.
+ b.	Need to figure out how to pass arguments into query that is connected to server.js.
+ c.	Need to figure out how to connect MySQL server to server.js.
+
+5.	Users can search movies by year.
+ a.	Need to figure out how to pass arguments into server.js.
+ b.	Need to figure out how to pass arguments into query that is connected to server.js.
+ c.	Need to figure out how to connect MySQL server to server.js.
+
+6.	Users can search movies by director’s name.
+ a.	Need to figure out how to pass arguments into server.js.
+ b.	Need to figure out how to pass arguments into query that is connected to server.js.
+ c.	Need to figure out how to connect MySQL server to server.js.
+
+7.	Users can search movies, by any combination of title, actor’s name, director, and year.
+ a.	Need to figure out how to pass arguments into server.js.
+ b.	Need to figure out how to pass arguments into query that is connected to server.js.
+ c.	Need to figure out how to connect MySQL server to server.js.
+
+8.	Users can add movies to the database but need to fill out all the required fields.
+ a.	Need to figure out how to pass arguments into query that is connected to server.js. 
+
+9.	Users can remove movies from the database, by searching and deleting them.
+a.	Need to figure out how to pass MovieID via the check mark into the server.js, in order to remove movies from the database.
+
+10.	Users can edit movies that are in the database.
+a.	Need to figure out how to pass MovieID via the check mark into the server.js, in order to edit movie into MySQL the database.
